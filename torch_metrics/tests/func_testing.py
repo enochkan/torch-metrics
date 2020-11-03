@@ -1,4 +1,4 @@
-from mse import MSEMetric
+from torch_metrics import MSEMetric, MAEMetric, RSquaredMetric
 import torch
 
 metric = MSEMetric()
