@@ -5,11 +5,11 @@ As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), 
 
 ### Usage
 
-- `pip install torchmetrics` or 
+- `pip install --upgrade torch_metrics` or 
 - `git clone https://github.com/chinokenochkan/torch-metrics`
 
 ```python
-from torchmetrics import RSquaredMetric
+from torch_metrics import RSquaredMetric
 ground_truth = torch.tensor([2., 41., 55., 65.])
 model_out = model(torch.tensor([1., 2., 3.]))
 r2 = RSquaredMetric(model_out, ground_truth)
