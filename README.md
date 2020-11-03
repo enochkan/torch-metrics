@@ -10,9 +10,11 @@ As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), 
 
 ```python
 from torch_metrics import RSquaredMetric
+## define metric ##
+metric = RSquaredMetric()
 ground_truth = torch.tensor([2., 41., 55., 65.])
 model_out = model(torch.tensor([1., 2., 3.]))
-r2 = RSquaredMetric(model_out, ground_truth)
+r2 = metric(tensor1=model_out, tensor2=ground_truth)
 ```
 
 

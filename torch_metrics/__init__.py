@@ -1,1 +1,3 @@
-from .torch_metrics import RSquaredMetric, MSEMetric, MAEMetric, corrcoef
+from .rsquared import RSquaredMetric
+from .mse import MSEMetric
+from .mae import MAEMetric
