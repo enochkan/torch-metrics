@@ -1,6 +1,12 @@
 import torch
 
 def corrcoef(tensor1, tensor2):
+    """
+    Arguments
+    ---------
+    x : torch.Tensor
+    y : torch.Tensor
+    """
     xm = tensor1.sub(torch.mean(tensor1))
     ym = tensor2.sub(torch.mean(tensor2))
     r_num = xm.dot(ym)
@@ -9,10 +15,28 @@ def corrcoef(tensor1, tensor2):
     return r_val
 
 def RSquaredMetric(tensor1, tensor2):
+    """
+    Arguments
+    ---------
+    x : torch.Tensor
+    y : torch.Tensor
+    """
     return (corrcoef(tensor1, tensor2))**2
 
 def MSEMetric(tensor1, tensor2):
+    """
+    Arguments
+    ---------
+    x : torch.Tensor
+    y : torch.Tensor
+    """
     return torch.mean((tensor1 - tensor2)**2)
 
 def MAEMetric(tensor1, tensor2):
+    """
+    Arguments
+    ---------
+    x : torch.Tensor
+    y : torch.Tensor
+    """
     return torch.mean((tensor1 - tensor2))
