@@ -18,4 +18,4 @@ model_out = model(torch.tensor([1.4, 2.2, 0.3, 0.6, 0.4, 0.7, 0.21]))
 r2 = metric(tensor1=model_out, tensor2=ground_truth)
 ```
 
-
+Please raise issues or feature requests [here](https://github.com/enochkan/torch-metrics/issues). 
