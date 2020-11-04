@@ -31,13 +31,13 @@ Metrics from `tf.keras.metrics` and other metrics that are already implemented v
 - [X] DSC class (Dice Similarity Coefficient)
 - [X] F1 class
 - [X] RSquared class
+- [X] Hinge class
+- [X] SquaredHinge class
 - [ ] Accuracy class
 - [ ] BinaryAccuracy class
 - [ ] CosineSimilarity class
 - [ ] LogCoshError class
 - [ ] AUC class
-- [ ] Hinge class
-- [ ] SquaredHinge class
 - [ ] BinaryCrossEntropy class
 - [ ] CategoricalCrossEntropy class
 - [ ] SparseCategoricalCrossentropy class
