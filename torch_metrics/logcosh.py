@@ -1,13 +1,15 @@
+import torch
+
 class LogCoshError:
     """
-    Logarithm of the hyperbolic cosine of the prediction error.
+    Computes Logarithm of the hyperbolic cosine of the prediction error.
 
     Args:
-        y_true: Ground truth values.
-        y_pred: The predicted values.
+        y_true: Tensor of Ground truth values.
+        y_pred: Tensor of Predicted values.
 
     Returns:
-        Logcosh error
+        Tensor of Logcosh error
     """
 
     def __call__(self, y_pred, y_true):

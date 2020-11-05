@@ -8,3 +8,4 @@ from .meaniou import MeanIoU
 from .dice import DSC
 from .logcosh import LogCoshError
 from .accuracy import Accuracy
+from .kldivergence import KLDivergence
