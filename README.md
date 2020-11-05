@@ -33,10 +33,10 @@ Metrics from `tf.keras.metrics` and other metrics that are already implemented v
 - [X] RSquared class
 - [X] Hinge class
 - [X] SquaredHinge class
+- [X] LogCoshError class
 - [ ] Accuracy class
 - [ ] BinaryAccuracy class
 - [ ] CosineSimilarity class
-- [ ] LogCoshError class
 - [ ] AUC class
 - [ ] BinaryCrossEntropy class
 - [ ] CategoricalCrossEntropy class
