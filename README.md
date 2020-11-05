@@ -10,9 +10,9 @@ As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), 
 - `git clone https://github.com/chinokenochkan/torch-metrics`
 
 ```python
-from torch_metrics import F1Metric
+from torch_metrics import Accuracy
 ## define metric ##
-metric = F1Metric()
+metric = Accuracy()
 ground_truth = torch.tensor([2., 41., 55., 65., 4., 0.4, 0.8, 0.25])
 model_out = model(torch.tensor([1.4, 2.2, 0.3, 0.6, 0.4, 0.7, 0.21]))
 r2 = metric(tensor1=model_out, tensor2=ground_truth)
