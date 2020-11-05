@@ -29,12 +29,12 @@ Metrics from `tf.keras.metrics` and other metrics that are already implemented v
 - [X] Recall class
 - [X] MeanIoU class
 - [X] DSC class (Dice Similarity Coefficient)
-- [X] F1 class
+- [X] F1Score class
 - [X] RSquared class
 - [X] Hinge class
 - [X] SquaredHinge class
 - [X] LogCoshError class
-- [ ] Accuracy class
+- [X] Accuracy class
 - [ ] BinaryAccuracy class
 - [ ] CosineSimilarity class
 - [ ] AUC class
