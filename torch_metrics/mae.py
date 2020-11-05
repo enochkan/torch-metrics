@@ -1,6 +1,6 @@
 import torch
 
-class MAEMetric:
+class MeanAbsoluteError:
     def __call__(self, tensor1, tensor2):
         """
         Arguments

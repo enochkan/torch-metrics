@@ -1,6 +1,6 @@
 import torch
 
-class DSCMetric:
+class DSC:
     def __init__(self):
         self.smooth = 1.
     def __call__(self, tensor1, tensor2):

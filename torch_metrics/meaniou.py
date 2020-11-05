@@ -1,6 +1,6 @@
 import torch 
 
-class MeanIoUMetric:
+class MeanIoU:
     def __init__(self):
         self.epsilon = 1e-10
     def __call__(self, tensor1, tensor2):

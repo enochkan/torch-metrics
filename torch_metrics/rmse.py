@@ -1,6 +1,6 @@
 import torch
 
-class RMSEMetric:
+class RootMeanSquaredError:
     def __call__(self, tensor1, tensor2):
         """
         Returns the root mean squared error (RMSE) of two tensors.

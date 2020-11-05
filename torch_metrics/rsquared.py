@@ -14,7 +14,7 @@ def corrcoef(tensor1, tensor2):
     r_val = r_num / r_den
     return r_val
 
-class RSquaredMetric:
+class RSquared:
     def __init__(self):
         self.corrcoef = corrcoef
     def __call__(self, tensor1, tensor2):

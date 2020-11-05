@@ -1,6 +1,6 @@
 import torch
 
-class MSEMetric:
+class MeanSquaredError:
     def __call__(self, tensor1, tensor2):
         """
         Arguments

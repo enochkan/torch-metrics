@@ -1,7 +1,7 @@
 import torch
 from precision_recall import Precision, Recall
 
-class F1Metric:
+class F1Score:
     def __init__(self):
         self.prec = Precision()
         self.recall = Recall()
