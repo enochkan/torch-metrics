@@ -2,7 +2,7 @@ from .rsquared import RSquared
 from .mse import MeanSquaredError
 from .mae import MeanAbsoluteError
 from .rmse import RootMeanSquaredError
-from .precision_recall import Precision, Recall
+from .pr import Precision, Recall   
 from .f1 import F1Score
 from .meaniou import MeanIoU
 from .dice import DSC

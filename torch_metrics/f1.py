@@ -1,5 +1,5 @@
 import torch
-from pr import Precision, Recall
+from torch_metrics.pr import Precision, Recall
 
 class F1Score:
     def __init__(self):
