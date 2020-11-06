@@ -1,12 +1,25 @@
-import torch
 from torch_metrics.pr import Precision, Recall
 
+
 class F1Score:
-    def __init__(self):
-        self.prec = Precision()
+    """
+    Computes F1-score between `y_true` and `y_pred`.
+
+    Args:
+        y_true: Tensor of Ground truth values.
+        y_pred: Tensor of Predicted values.
+        epsilon: Fuzz factor to avoid division by zero. default: `1e-10`
+
+    Returns:
+        Tensor of F1-score
+    """
+
+    def __init__(self, epsilon=1e-10):
+        self.epsilon = epsilon
+        self.precision = Precision()
         self.recall = Recall()
-        self.epsilon = 1e-10
-    def __call__(self, tensor1, tensor2):
-        precision = self.prec(tensor1, tensor2)
-        recall = self.recall(tensor1, tensor2)
-        return 2*((precision*recall)/(precision+recall+self.epsilon))
+
+    def __call__(self, y_pred, y_true):
+        precision = self.precision(y_pred, y_true)
+        recall = self.recall(y_pred, y_true)
+        return 2 * ((precision * recall) / (precision + recall + self.epsilon))
