@@ -1,11 +1,11 @@
-from .rsquared import RSquared
-from .mse import MeanSquaredError
-from .mae import MeanAbsoluteError
-from .rmse import RootMeanSquaredError
-from .pr import Precision, Recall   
-from .f1 import F1Score
-from .meaniou import MeanIoU
-from .dice import DSC
-from .logcosh import LogCoshError
-from .accuracy import Accuracy
-from .kldivergence import KLDivergence
+from torch_metrics.rsquared import RSquared
+from torch_metrics.mse import MeanSquaredError
+from torch_metrics.mae import MeanAbsoluteError
+from torch_metrics.rmse import RootMeanSquaredError
+from torch_metrics.pr import Precision, Recall
+from torch_metrics.f1 import F1Score
+from torch_metrics.meaniou import MeanIoU
+from torch_metrics.dice import DSC
+from torch_metrics.logcosh import LogCoshError
+from torch_metrics.accuracy import Accuracy
+from torch_metrics.kldivergence import KLDivergence
