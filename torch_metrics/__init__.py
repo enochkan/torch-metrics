@@ -9,3 +9,4 @@ from torch_metrics.dice import DSC
 from torch_metrics.logcosh import LogCoshError
 from torch_metrics.accuracy import Accuracy
 from torch_metrics.kldivergence import KLDivergence
+from torch_metrics.msle import MeanSquaredLogarithmicError
