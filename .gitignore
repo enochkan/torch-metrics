@@ -2,4 +2,5 @@
 /*dist
 .vscode
 venv
-torch_metrics/__pycache__/
+__pycache__/
+.pytest_cache
