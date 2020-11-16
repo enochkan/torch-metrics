@@ -8,8 +8,8 @@ class MeanSquaredLogarithmicError:
     Computes the mean squared logarithmic error between `y_true` and `y_pred`.
 
     Args:
-        y_true: Tensor of Ground truth values.
-        y_pred: Tensor of Predicted values.
+        y_true: Tensor of Ground truth values. shape = [batch_size, d0, .., dN]
+        y_pred: Tensor of Predicted values. shape = [batch_size, d0, .., dN]
 
     Returns:
         Tensor of mean squared logarithmic error
