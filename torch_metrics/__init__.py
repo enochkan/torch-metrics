@@ -10,3 +10,4 @@ from torch_metrics.logcosh import LogCoshError
 from torch_metrics.accuracy import Accuracy
 from torch_metrics.kldivergence import KLDivergence
 from torch_metrics.msle import MeanSquaredLogarithmicError
+from torch_metrics.huber import Huber

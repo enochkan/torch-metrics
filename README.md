@@ -13,7 +13,7 @@ As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), 
 from torch_metrics import Accuracy
 
 ## define metric ##
-metric = Accuracy(logits=False)
+metric = Accuracy(from_logits=False)
 y_pred = torch.tensor([1, 2, 3, 4])
 y_true = torch.tensor([0, 2, 3, 4])
 
@@ -25,18 +25,18 @@ from torch_metrics import Accuracy
 
 ## define metric ##
 metric = Accuracy()
-
-y_true = torch.tensor([0, 2, 3, 4])
 y_pred = torch.tensor([[0.2, 0.6, 0.1, 0.05, 0.05],
                        [0.2, 0.1, 0.6, 0.05, 0.05],
                        [0.2, 0.05, 0.1, 0.6, 0.05],
                        [0.2, 0.05, 0.05, 0.05, 0.65]])
+y_true = torch.tensor([0, 2, 3, 4])
+
 print(metric(y_pred, y_true))
 ```
 
 ### Implementation
 
-Metrics from `tf.keras.metrics` and other metrics that are already implemented vs. to-do
+Metrics from `tf.keras.metrics` and other metrics that are already implemented vs to-do
 
 - [X] MeanSquaredError class
 - [X] RootMeanSquaredError class
@@ -52,7 +52,6 @@ Metrics from `tf.keras.metrics` and other metrics that are already implemented v
 - [X] LogCoshError class
 - [X] Accuracy class
 - [X] KLDivergence class
-- [ ] BinaryAccuracy class
 - [ ] CosineSimilarity class
 - [ ] AUC class
 - [ ] BinaryCrossEntropy class
