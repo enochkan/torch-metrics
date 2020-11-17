@@ -1,10 +1,11 @@
-from torch_metrics import Accuracy, Precision, F1Score
-from sklearn.metrics import accuracy_score, f1_score, precision_score
 import torch
 import pytest
 import numpy as np
 from numpy.testing import assert_allclose
 from input_datas import binary_prob_inputs, binary_raw_inputs
+from sklearn.metrics import accuracy_score, f1_score, precision_score
+from torch_metrics.classification import Accuracy, Precision, F1Score
+
 
 torch.manual_seed(42)
 

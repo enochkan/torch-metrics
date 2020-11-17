@@ -1,4 +1,4 @@
-from torch_metrics.pr import Precision, Recall
+from torch_metrics.classification.pr import Precision, Recall
 
 
 class F1Score:
