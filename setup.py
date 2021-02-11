@@ -7,5 +7,5 @@ setup(
     url="https://github.com/chinokenochkan/torch-metrics",
     author="Chi Nok Enoch Kan @chinokenochkan",
     author_email="kanxx030@gmail.com",
-    packages=["torch_metrics"],
+    packages=find_packages(include=["torch_metrics", "torch_metrics.*"]),
 )
