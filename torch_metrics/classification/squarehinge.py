@@ -1,5 +1,6 @@
 import torch
 
+
 class SquareHingeMetric:
     def __call__(self, tensor1, tensor2):
         """
@@ -8,12 +9,11 @@ class SquareHingeMetric:
         pred : torch.Tensor
         ground_truth : torch.Tensor [-1 or 1]
         """
-        if 0. in torch.unique(tensor2):
-            tensor2[tensor2 == 0.] = -1.
+        if 0.0 in torch.unique(tensor2):
+            tensor2[tensor2 == 0.0] = -1.0
         hinge_loss = 1 - torch.mul(tensor1, tensor2)
         hinge_loss[hinge_loss < 0] = 0
-        return torch.mean(hinge_loss**2)
-
+        return torch.mean(hinge_loss ** 2)
 
 
 # metric = SquareHingeMetric()

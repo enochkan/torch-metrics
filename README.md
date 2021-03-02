@@ -1,4 +1,5 @@
 # Torch-metrics: model evaluation metrics for PyTorch
+
 [![PyPI version](https://badge.fury.io/py/torch-metrics.svg)](https://badge.fury.io/py/torch-metrics)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -6,7 +7,7 @@ As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), 
 
 ### Usage
 
-- `pip install --upgrade torch-metrics` or 
+- `pip install --upgrade torch-metrics` or
 - `git clone https://github.com/enochkan/torch-metrics.git`
 
 ```python
@@ -21,7 +22,6 @@ print(metric(y_pred, y_true))
 ```
 
 ```python
-from torch_metrics import Accuracy
 
 ## define metric ##
 metric = Accuracy()
@@ -38,25 +38,32 @@ print(metric(y_pred, y_true))
 
 Metrics from `tf.keras.metrics` and other metrics that are already implemented vs to-do
 
-- [X] MeanSquaredError class
-- [X] RootMeanSquaredError class
-- [X] MeanAbsoluteError class
-- [X] Precision class
-- [X] Recall class
-- [X] MeanIoU class
-- [X] DSC class (Dice Similarity Coefficient)
-- [X] F1Score class
-- [X] RSquared class
-- [X] Hinge class
-- [X] SquaredHinge class
-- [X] LogCoshError class
-- [X] Accuracy class
-- [X] KLDivergence class
+- [x] MeanSquaredError class
+- [x] RootMeanSquaredError class
+- [x] MeanAbsoluteError class
+- [x] Precision class
+- [x] Recall class
+- [x] MeanIoU class
+- [x] DSC class (Dice Similarity Coefficient)
+- [x] F1Score class
+- [x] RSquared class
+- [x] Hinge class
+- [x] SquaredHinge class
+- [x] LogCoshError class
+- [x] Accuracy class
+- [x] KLDivergence class
 - [ ] CosineSimilarity class
 - [ ] AUC class
 - [ ] BinaryCrossEntropy class
 - [ ] CategoricalCrossEntropy class
 - [ ] SparseCategoricalCrossentropy class
 
+### Pre-commit hooks
 
-Please raise issues or feature requests [here](https://github.com/enochkan/torch-metrics/issues). 
+To run pre-commit against all files:
+
+```python
+pre-commit run --all-files
+```
+
+Please raise issues or feature requests [here](https://github.com/enochkan/torch-metrics/issues).

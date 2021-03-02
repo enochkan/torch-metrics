@@ -1,2 +1,1 @@
-from torch_metrics import classification
-from torch_metrics import regression
+from torch_metrics import classification, regression

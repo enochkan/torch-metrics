@@ -1,15 +1,19 @@
 import torch
 
+
 class DSC:
     def __init__(self):
-        self.smooth = 1.
+        self.smooth = 1.0
+
     def __call__(self, tensor1, tensor2):
         iflat = tensor1.view(-1)
         tflat = tensor2.view(-1)
         intersection = (iflat * tflat).sum()
-        
-        return 1 - ((2. * intersection + self.smooth) /
-                (iflat.sum() + tflat.sum() + self.smooth))
+
+        return 1 - (
+            (2.0 * intersection + self.smooth)
+            / (iflat.sum() + tflat.sum() + self.smooth)
+        )
 
 
 # metric = DSCMetric()

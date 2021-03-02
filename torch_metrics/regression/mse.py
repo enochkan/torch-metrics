@@ -1,5 +1,6 @@
 import torch
 
+
 class MeanSquaredError:
     def __call__(self, tensor1, tensor2):
         """
@@ -8,4 +9,4 @@ class MeanSquaredError:
         x : torch.Tensor
         y : torch.Tensor
         """
-        return torch.mean((tensor1 - tensor2)**2)
+        return torch.mean((tensor1 - tensor2) ** 2)
