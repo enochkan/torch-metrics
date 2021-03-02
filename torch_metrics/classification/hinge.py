@@ -3,11 +3,11 @@ import torch
 
 class HingeMetric:
     """
-        Arguments
-        ---------
-        pred : torch.Tensor
-        ground_truth : torch.Tensor [-1 or 1]
-        """
+    Arguments
+    ---------
+    pred : torch.Tensor
+    ground_truth : torch.Tensor [-1 or 1]
+    """
 
     def __call__(self, tensor1, tensor2):
         if 0.0 in torch.unique(tensor2):

@@ -1,5 +1,6 @@
 import torch
 
+
 class RootMeanSquaredError:
     def __call__(self, tensor1, tensor2):
         """
@@ -10,4 +11,4 @@ class RootMeanSquaredError:
         x : torch.Tensor
         y : torch.Tensor
         """
-        return torch.sqrt(torch.mean((tensor1 - tensor2)**2))
+        return torch.sqrt(torch.mean((tensor1 - tensor2) ** 2))

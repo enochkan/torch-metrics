@@ -1,6 +1,5 @@
 import torch
-from torch_metrics.utils import check_same_shape
-from torch_metrics.utils import convert_to_tensor
+from torch_metrics.utils import check_same_shape, convert_to_tensor
 
 
 class KLDivergence:

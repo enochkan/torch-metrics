@@ -1,20 +1,13 @@
-import torch
-import pytest
 import numpy as np
+import pytest
+import torch
+from input_datas import normal_regression_inputs, uniform_regression_inputs
 from numpy.testing import assert_allclose
-from input_datas import uniform_regression_inputs, normal_regression_inputs
-from sklearn.metrics import (
-    mean_absolute_error,
-    mean_squared_error,
-    mean_squared_log_error,
-)
-from torch_metrics.regression import (
-    MeanAbsoluteError,
-    MeanSquaredError,
-    MeanSquaredLogarithmicError,
-    RootMeanSquaredError,
-)
-
+from sklearn.metrics import (mean_absolute_error, mean_squared_error,
+                             mean_squared_log_error)
+from torch_metrics.regression import (MeanAbsoluteError, MeanSquaredError,
+                                      MeanSquaredLogarithmicError,
+                                      RootMeanSquaredError)
 
 torch.manual_seed(42)
 
@@ -53,7 +46,9 @@ def test_mse(y_true, y_pred):
 
 @pytest.mark.parametrize(
     "y_true, y_pred",
-    [(uniform_regression_inputs.target, uniform_regression_inputs.preds),],
+    [
+        (uniform_regression_inputs.target, uniform_regression_inputs.preds),
+    ],
 )
 def test_msle(y_true, y_pred):
     sk_preds = y_pred.numpy()
