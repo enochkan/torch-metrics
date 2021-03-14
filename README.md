@@ -68,7 +68,7 @@ To quickly get started with local development, run:
 make develop
 ```
 
-## Pre-commit hooks
+### Pre-commit hooks
 
 To run pre-commit against all files:
 
@@ -76,4 +76,6 @@ To run pre-commit against all files:
 pre-commit run --all-files
 ```
 
-Please raise issues or feature requests [here](https://github.com/enochkan/torch-metrics/issues).
+## Contributing
+
+Please raise issues or feature requests [here](https://github.com/enochkan/torch-metrics/issues). It will be extremely helpful if you comment on a specific issue before working on it. This provides visibility for others who also intend to work on the same issue. Reference any pull requests to their original issues. 
