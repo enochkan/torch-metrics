@@ -3,17 +3,12 @@ ENVIRONMENT := development
 OS := $(shell uname -s)
 
 .PHONY: develop
-develop: verify-dev-env clean-build
-	python setup.py sdist
-	python setup.py install
+develop: clean-build install-dev-dependencies
 	pip install -e .
 
-.PHONY: verify-dev-env
-verify-dev-env: verify-python-version
-
-.PHONY: verify-python-version
-verify-python-version:
-	@./verify-python-version.sh
+.PHONY: install-dev-dependencies
+install-dev-dependencies: 
+	pip install -r requirements.txt
 
 .PHONY: clean-build
 clean-build: 
