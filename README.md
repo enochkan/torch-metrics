@@ -1,18 +1,17 @@
 # Torch-metrics
 
+[![PyPI version](https://badge.fury.io/py/torch-metrics.svg)](https://badge.fury.io/py/torch-metrics)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Model evaluation metrics for PyTorch
 
 Torch-metrics serves as a custom library to provide common ML evaluation metrics in Pytorch, similar to `tf.keras.metrics`.
-
-[![PyPI version](https://badge.fury.io/py/torch-metrics.svg)](https://badge.fury.io/py/torch-metrics)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), Pytorch does not have a built-in libary `torch.metrics` for model evaluation metrics. This is similar to the metrics library in [PyTorch Lightning](https://pytorch-lightning.readthedocs.io/en/latest/metrics.html#class-metrics).
 
 ## Usage
 
-- `pip install --upgrade torch-metrics` or
-- `git clone https://github.com/enochkan/torch-metrics.git`
+- `pip install --upgrade torch-metrics`
 
 ```python
 from torch_metrics import Accuracy
