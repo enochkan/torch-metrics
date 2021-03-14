@@ -1,11 +1,15 @@
-# Torch-metrics: model evaluation metrics for PyTorch
+# Torch-metrics
+
+Model evaluation metrics for PyTorch
+
+Torch-metrics serves as a custom library to provide common ML evaluation metrics in Pytorch, similar to `tf.keras.metrics`.
 
 [![PyPI version](https://badge.fury.io/py/torch-metrics.svg)](https://badge.fury.io/py/torch-metrics)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), Pytorch does not have a built-in libary `torch.metrics` for model evaluation metrics. This python library serves as a custom library to provide common evaluation metrics in Pytorch, similar to `tf.keras.metrics`. This is similar to the metrics library in [PyTorch Lightning](https://pytorch-lightning.readthedocs.io/en/latest/metrics.html#class-metrics).
+As summarized in this [issue](https://github.com/pytorch/pytorch/issues/22439), Pytorch does not have a built-in libary `torch.metrics` for model evaluation metrics. This is similar to the metrics library in [PyTorch Lightning](https://pytorch-lightning.readthedocs.io/en/latest/metrics.html#class-metrics).
 
-### Usage
+## Usage
 
 - `pip install --upgrade torch-metrics` or
 - `git clone https://github.com/enochkan/torch-metrics.git`
@@ -34,7 +38,7 @@ y_true = torch.tensor([0, 2, 3, 4])
 print(metric(y_pred, y_true))
 ```
 
-### Implementation
+## Implementation
 
 Metrics from `tf.keras.metrics` and other metrics that are already implemented vs to-do
 
@@ -58,14 +62,14 @@ Metrics from `tf.keras.metrics` and other metrics that are already implemented v
 - [ ] CategoricalCrossEntropy class
 - [ ] SparseCategoricalCrossentropy class
 
-### Local Development
+## Local Development
 
 To quickly get started with local development, run:
 ```python
 make develop
 ```
 
-### Pre-commit hooks
+## Pre-commit hooks
 
 To run pre-commit against all files:
 
