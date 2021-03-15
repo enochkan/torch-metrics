@@ -1,5 +1,5 @@
 torch>=1.3
-black
-flake8
-isort
-pre-commit
+black>=19.10b0
+flake8>=3.8.4
+isort>=5.7.0
+pre-commit>=2.10.1
