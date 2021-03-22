@@ -61,11 +61,16 @@ Metrics from `tf.keras.metrics` and other metrics that are already implemented v
 - [ ] CategoricalCrossEntropy class
 - [ ] SparseCategoricalCrossentropy class
 
-## Local Development
+## Local Development and Testing
 
 To quickly get started with local development, run:
 ```python
 make develop
+```
+
+To test, run:
+```python
+python3 -m pytest
 ```
 
 ### Pre-commit hooks
